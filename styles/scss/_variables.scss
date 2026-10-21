@@ -1,0 +1,32 @@
+// Цвета взяты из текущей темы teaboom.ru
+$color-text: #202020;
+$color-muted: #757575;
+$color-accent: #f5d730;
+$color-accent-soft: #fefcef;
+$color-green-soft: #e9f2c3;
+$color-sale: #e53935;
+$color-surface: #f6f7f8;
+$color-border: #e4e4e4;
+$color-white: #fff;
+
+$font-base: 'Open Sans', Arial, sans-serif;
+$font-accent: 'Oswald', Arial, sans-serif;
+
+$radius: 8px;
+$transition: 0.2s ease;
+$container: 1200px;
+
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+@mixin tablet {
+  @media (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}

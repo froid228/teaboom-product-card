@@ -1,0 +1,26 @@
+@use 'variables' as *;
+
+.price {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin: 0;
+
+  &__current {
+    font-family: $font-accent;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1;
+    color: $color-sale;
+  }
+
+  &__old {
+    font-size: 16px;
+    color: $color-muted;
+
+    &[hidden] {
+      display: none;
+    }
+  }
+}

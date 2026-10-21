@@ -1,0 +1,39 @@
+@use 'variables' as *;
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 52px;
+  padding: 12px 28px;
+  font-family: $font-base;
+  font-size: 16px;
+  font-weight: 700;
+  color: $color-text;
+  background: $color-accent;
+  border: 0;
+  border-radius: $radius;
+  cursor: pointer;
+  transition: background-color $transition, color $transition, transform $transition;
+
+  // Наведение как на teaboom.ru: тёмный фон и жёлтый текст
+  &:hover {
+    color: $color-accent;
+    background: $color-text;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &--done,
+  &--done:hover {
+    color: $color-text;
+    background: $color-green-soft;
+  }
+
+  &__icon {
+    flex-shrink: 0;
+  }
+}

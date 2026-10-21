@@ -1,0 +1,23 @@
+@use 'variables' as *;
+
+.specs {
+  margin: 0;
+  border-top: 1px solid $color-border;
+
+  &__row {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 16px;
+    padding: 10px 0;
+    font-size: 14px;
+    border-bottom: 1px solid $color-border;
+  }
+
+  &__term {
+    color: $color-muted;
+  }
+
+  &__value {
+    margin: 0;
+  }
+}
